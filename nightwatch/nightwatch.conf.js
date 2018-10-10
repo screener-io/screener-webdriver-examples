@@ -2,9 +2,11 @@ module.exports = {
   src_folders: ['tests'],
   test_settings: {
     default: {
-      selenium_port: 443,
-      selenium_host: 'hub.screener.io',
-      use_ssl: true,
+      webdriver: {
+        host: 'hub.screener.io',
+        port: 443,
+        ssl: true
+      },
       desiredCapabilities: {
         browserName: 'chrome',
         screener: {
