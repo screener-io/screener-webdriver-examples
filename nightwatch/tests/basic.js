@@ -2,7 +2,7 @@ module.exports = {
   'Nightwatch Example': browser => {
     browser
       .url('https://screener.io')
-      .execute('/*@screener.init*/', ['Chrome: Nightwatch Test'])
+      .execute('/*@screener.init*/', ['Nightwatch Example'])
       .execute('/*@screener.snapshot*/', ['Home'])
       .execute('/*@screener.end*/', [], ({value}) => {
         // @screener.end will return screener results

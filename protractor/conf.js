@@ -4,7 +4,7 @@ exports.config = {
   capabilities: {
     browserName: 'chrome',
     screener: {
-      name: 'Chrome: Protractor Test',
+      name: 'Protractor Example',
       resolution: '1280x1024',
       apiKey: process.env.SCREENER_API_KEY,
       group: process.env.SCREENER_GROUP_ID

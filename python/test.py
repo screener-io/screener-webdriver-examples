@@ -1,7 +1,7 @@
 from selenium import webdriver
 import os
 screener = {
-  'name': 'Chrome: Python Test',
+  'name': 'Python Example',
   'resolution': '1280x1024',
   'apiKey': os.environ['SCREENER_API_KEY'],
   'group': os.environ['SCREENER_GROUP_ID']
