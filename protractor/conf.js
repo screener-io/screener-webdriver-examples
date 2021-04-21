@@ -3,11 +3,15 @@ exports.config = {
   specs: ['spec.js'],
   capabilities: {
     browserName: 'chrome',
-    screener: {
-      name: 'Protractor Example',
-      resolution: '1280x1024',
-      apiKey: process.env.SCREENER_API_KEY,
-      group: process.env.SCREENER_GROUP_ID
+    'sauce:visual': {
+       apiKey: process.env.SCREENER_API_KEY,
+       projectName: 'my-project',
+       viewportSize: '1280x1024'
+    },
+    'sauce:options': {
+       username: process.env.SAUCE_USERNAME,
+       accessKey: process.env.SAUCE_ACCESS_KEY,
+       build: `Protractor build-${process.env.DATE}`
     }
   }
 };
